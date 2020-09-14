@@ -76,6 +76,6 @@ void    make_screenshot(t_p *p, char *str)
     p->screenshot = 1;
     if(!take_screenshot(p))
         error("Error. Couldnt create a .bmp", p);
-    ft_printf("Screenshoot now it is safe");
+    write(1,"Screenshoot now it is safe", 27);
     close_game(p);
 }

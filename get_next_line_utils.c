@@ -6,11 +6,11 @@
 /*   By: carlota <carlota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/02 16:40:59 by clopez-g          #+#    #+#             */
-/*   Updated: 2020/09/02 18:14:32 by carlota          ###   ########.fr       */
+/*   Updated: 2020/09/14 19:58:20 by carlota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "cub3d.h"
 
 char	*ft_strdup_get(char const *src)
 {

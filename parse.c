@@ -86,9 +86,9 @@ int     parse(char *name, t_p *p)
     tmp = NULL;
     if((fd = open(name, O_RDONLY)) < 0)
         error("Error, map file not found", p);
-     p->lines = 0;
-     p->lines = get_lines(p->lines, tmp, fd);
-     close(fd);
+    p->lines = 0;
+    p->lines = get_lines(p->lines, tmp, fd);
+    close(fd);
     init_p(p);
     ml = parse_parameters(p, p->lines);
     verify_params(p);

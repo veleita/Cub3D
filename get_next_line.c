@@ -6,11 +6,11 @@
 /*   By: carlota <carlota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/02 16:40:37 by clopez-g          #+#    #+#             */
-/*   Updated: 2020/09/02 18:44:07 by carlota          ###   ########.fr       */
+/*   Updated: 2020/09/14 19:58:15 by carlota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "cub3d.h"
 
 static void	strdel(char **str)
 {
