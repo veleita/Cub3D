@@ -31,7 +31,7 @@ CFLAG	= -Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME):
-	gcc $(CFLAG) -g -c $(SRC)
+	gcc $(CFLAG) -o $(NAME) $(SRC) 
 
 clean:
 	rm -f *.o

@@ -163,7 +163,7 @@ typedef struct struct1{
     t_pl    *pl;
     t_m     *map;
     t_r     *r; 
-    char    **lines; //porque char? why????
+    char    **lines;
     int     screen;
     int     floor;
     int     sky;
