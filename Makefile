@@ -26,12 +26,15 @@ SRC		= check.c \
 		ft_strncmp.c \
 
 OBJ		= $(SRC:.c=.o)
+CC		= gcc
 CFLAG	= -Wall -Wextra -Werror
+INCLUDES	= -I includes/
 
 all: $(NAME)
 
 $(NAME):
-	gcc $(CFLAG) -o $(NAME) $(SRC) 
+	%.o: %.c
+	@ $(CC) $(INCLUDES)	-c $< -o $@
 
 clean:
 	rm -f *.o
