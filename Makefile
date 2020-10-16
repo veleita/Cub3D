@@ -32,7 +32,7 @@ INCLUDES	= -I includes/
 
 all: $(NAME)
 
-$(NAME):
+$(NAME): $(OBJ)
 	%.o: %.c
 	@ $(CC) $(INCLUDES)	-c $< -o $@
 
