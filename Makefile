@@ -34,7 +34,10 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	%.o: %.c
-	@ $(CC) $(INCLUDES)	-c $< -o $@
+	 $(CC) $(INCLUDES)	-c $< -o $@
+
+%.o: %.c
+	 $(CC) -g $(INCLUDES) -c $< -o $@
 
 clean:
 	rm -f *.o
