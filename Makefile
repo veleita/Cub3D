@@ -27,17 +27,15 @@ SRC		= check.c \
 
 OBJ		= $(SRC:.c=.o)
 CC		= gcc
-CFLAG	= -Wall -Wextra -Werror
-INCLUDES	= -I includes/
+CFLAG	= -Wall -Wextra -Werror -I
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	%.o: %.c
-	 $(CC) $(INCLUDES)	-c $< -o $@
+	 $(CC) $(OBJ) $(CFLAG) -o $(NAME) 
 
 %.o: %.c
-	 $(CC) -g $(INCLUDES) -c $< -o $@
+	 $(CC) -g -c $< -o $@
 
 clean:
 	rm -f *.o
