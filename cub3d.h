@@ -262,7 +262,6 @@ int		get_next_line(int fd, char **line);
 
 void	ft_bzero(void *s, size_t n);
 int	    ft_isdigit(int c);
-size_t	ft_strlen(const char *s);
 int	    ft_strncmp(char *s1, char *s2, unsigned int n);
 
 #endif

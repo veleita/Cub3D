@@ -3,7 +3,6 @@ NAME	= cub3D
 SRC		= check.c \
 		choose_p.c \
 		cub3d.c \
-		cub3d.h \
 		cubatoi.c \
 		drawspr.c \
 		error.c \
@@ -27,12 +26,12 @@ SRC		= check.c \
 
 OBJ		= $(SRC:.c=.o)
 CC		= gcc
-CFLAG	= -Wall -Wextra -Werror -I
+CFLAG	= -Wall -Wextra -Werror
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	 $(CC) $(OBJ) $(CFLAG) -o $(NAME) 
+	$(CC) $(CFLAG) $(OBJ) -o $(NAME)
 
 %.o: %.c
 	 $(CC) -g -c $< -o $@
