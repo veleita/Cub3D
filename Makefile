@@ -25,7 +25,7 @@ SRC		= check.c \
 		ft_strncmp.c \
 
 OBJ		= $(SRC:.c=.o)
-CC		= gcc
+CC		= gcc -framework OpenGL -framework Appkit
 CFLAG	= -Wall -Wextra -Werror
 
 all: $(NAME)
