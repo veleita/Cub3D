@@ -25,7 +25,7 @@ SRC		= check.c \
 		ft_strncmp.c \
 
 OBJ		= $(SRC:.c=.o)
-CC		= gcc -framework OpenGL -framework Appkit
+CC		= gcc -Lmlx -lmlx -framework OpenGL -framework AppKit -c
 CFLAG	= -Wall -Wextra -Werror
 
 all: $(NAME)
@@ -34,7 +34,7 @@ $(NAME): $(OBJ)
 	$(CC) $(CFLAG) $(OBJ) -o $(NAME)
 
 %.o: %.c
-	 $(CC) -g -c $< -o $@
+	 $(CC) -g $< -o $@
 
 clean:
 	rm -f *.o
