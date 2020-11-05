@@ -6,7 +6,7 @@
 /*   By: carlota <carlota@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/02 16:40:59 by clopez-g          #+#    #+#             */
-/*   Updated: 2020/09/14 19:58:20 by carlota          ###   ########.fr       */
+/*   Updated: 2020/11/05 17:30:04 by carlota          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,18 +80,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	new[i] = '\0';
 	return (new);
-}
-
-size_t	ft_strlen(const char *s)
-{
-	size_t	i;
-
-	i = 0;
-	while (s[i])
-	{
-		i++;
-	}
-	return (i);
 }
 
 char	*ft_strjoin(char const *s1, char const *s2)
