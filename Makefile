@@ -39,6 +39,7 @@ $(NAME): $(OBJ)
 clean:
 	rm -f *.o
 	rm -f screenshot.bmp
+	rm -f cub3D
 
 fclean: clean
 	rm -f $(NAME)
